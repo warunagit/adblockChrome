@@ -3,6 +3,8 @@ chrome.webRequest.onBeforeRequest.addListner(
 )
 
 defaultFilters = [
-    "*://*doubleclick.net/",
-    "*://*google.com/",
+    "*://*.doubleclick.net/*",
+    "*://*.google.com/*",
+    "*://*.youtube.com/*",
+    "*://*.zodo.com/*",
 ]

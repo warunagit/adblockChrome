@@ -1,21 +1,22 @@
 {
+    "manifest_version": 3,
     "name": "RAVANIT AdBlock",
     "version": "1.0",
     "description": "RAVANIT AdBlock for block ads",
     "permissions": [
-        "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
     ],
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
     },
     "icons": {
         "16": "icons/logo_16x16.png",
         "48": "icons/logo_48x48.png",
         "128": "icons/logo_128x128.png"
-    },
-    "manifest_version": 2
+    }
 }
